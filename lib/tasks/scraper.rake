@@ -27,6 +27,9 @@ class ItemScraper
             price, title = process_products(product)
             prodInfos << [price, title, product.name]
         end
+
+        ## TODO: method to send email to user with new prices
+        #sendUpdatedPriceEmail(uname, uemail, prodInfos)
     end
 
     def self.process_product(product)
